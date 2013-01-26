@@ -10,6 +10,7 @@ recipes:
 - pivotal_workstation::workspace_directory
 - pivotal_workstation::git_projects
 - pivotal_workstation::sublime_text_pat
+- pivotal_workstation::firefox
 
 node_attributes:
   workspace_directory: dev
