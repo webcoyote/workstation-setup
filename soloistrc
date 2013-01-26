@@ -12,8 +12,14 @@ recipes:
 
 node_attributes:
   workspace_directory: dev
+
   git_projects:
-  - - my_dotfiles
-    - git@github.com:webcoyote/my_dotfiles.git
-  - - network-traffic-visualize
-    - git@github.com:webcoyote/network.git
+    # put the dotfiles in the home directory
+    - - .custom_dotfiles
+      - git@github.com:webcoyote/my_dotfiles.git
+      - .
+
+    # Store my other projects in "~/dev" 
+    - - network-traffic-visualize
+      - git@github.com:webcoyote/network.git
+
