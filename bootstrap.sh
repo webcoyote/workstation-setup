@@ -15,6 +15,12 @@
 # learning bash and this script is the by-product.
 
 
+# http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Make sure script runs from the script's directory
+cd "$DIR"
+
 # Defining HEREDOCS "almost just like" Ruby
 # http://ss64.com/bash/read.html
 # http://stackoverflow.com/questions/1167746/how-to-assign-a-heredoc-value-to-a-variable-in-bash
@@ -79,6 +85,8 @@ fi
 # EDIT ME: define OS-specific recipes to run
 heredoc MAC_RECIPES << EOF
 - pivotal_workstation::iterm2
+- pivotal_workstation::diff_merge
+- pivotal_workstation::finder_display_full_path
 EOF
 heredoc LINUX_RECIPES << EOF
 - yum::epel # Enterprise Linux
@@ -126,7 +134,7 @@ node_attributes:
       - git@github.com:webcoyote/my_dotfiles.git
       - .
 
-    # Store my other projects in "~/dev" 
+    # Store my other projects in "~/dev"
     - - network-traffic-visualize
       - git@github.com:webcoyote/network.git
 
