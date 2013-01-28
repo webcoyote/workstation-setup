@@ -122,7 +122,7 @@ $OS_RECIPES
 - pivotal_workstation::zsh
 - pivotal_workstation::workspace_directory
 - pivotal_workstation::git_projects
-- pivotal_workstation::sublime_text_pat
+- pivotal_workstation::sublime_text
 - pivotal_workstation::firefox
 
 node_attributes:
