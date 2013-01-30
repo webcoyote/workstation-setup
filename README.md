@@ -18,8 +18,7 @@ Clone this repository and edit the scripts as follows
 ## Running the script
 
     Syntax:
-    # \curl -L https://github.com/YOUR-GITHUB-USERNAME/workstation-setup/blob/master/bootstrap.sh | bash
+    # \curl -L https://raw.github.com/YOUR-USER-NAME/workstation-setup/master/bootstrap.sh | bash
 
     Example:
-    \curl -L https://github.com/webcoyote/workstation-setup/blob/master/bootstrap.sh | bash
-
+    \curl -L https://raw.github.com/webcoyote/workstation-setup/master/bootstrap.sh | bash
