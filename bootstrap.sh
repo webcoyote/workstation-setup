@@ -52,7 +52,7 @@ rvm reload
   cd workstation-setup
 
 # Install soloist
-  rvm use --create ruby-1.9.3-p374@soloist </dev/null
+  rvm gemset use --create ruby-1.9.3-p374@soloist </dev/null
   gem install soloist </dev/null
 
 # And run system configuration
