@@ -3,6 +3,10 @@
 # Prepares a Mac/Linux box to be configured
 # with RVM, soloist and configure-system.sh
 
+set -o errexit
+set -o nounset
+set -o pipefail
+
 
 #######################################################
 # Set the user/repo used to configure your computer
@@ -16,7 +20,11 @@ GITHUB_USER=webcoyote
 if ! (rvm --version 2>/dev/null >/dev/null) ; then
   \curl -L https://get.rvm.io | bash -s stable
   source ~/.rvm/scripts/rvm
+  if ! (rvm --version 2>/dev/null >/dev/null) ; then
+    export PATH=/home/$USER/.rvm/bin:$PATH
+  fi
 fi
+rvm reload
 
 # Install Ruby 1.9.3 with packages
   rvm pkg install --verify-downloads 1 readline </dev/null
@@ -48,6 +56,7 @@ fi
   cd workstation-setup
 
 # Install soloist
+  rvm use --create ruby-1.9.3-p374@soloist </dev/null
   gem install soloist </dev/null
 
 # And run system configuration
