@@ -2,10 +2,6 @@
 # configure-system.sh by Patrick Wyatt 1/26/2013
 # Configures a Mac/Linux box with development software
 
-set -o errexit
-set -o nounset
-set -o pipefail
-
 
 #######################################################
 # You can easily add your own recipes in marked spots:

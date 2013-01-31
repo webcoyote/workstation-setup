@@ -3,10 +3,6 @@
 # Prepares a Mac/Linux box to be configured
 # with RVM, soloist and configure-system.sh
 
-set -o errexit
-set -o nounset
-set -o pipefail
-
 
 #######################################################
 # Set the user/repo used to configure your computer
