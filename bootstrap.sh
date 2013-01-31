@@ -8,7 +8,6 @@
 # Set the user/repo used to configure your computer
 #   EDIT ME
 GITHUB_USER=webcoyote
-GITHUB_REPO=workstation-setup
 #   EDIT END
 #######################################################
 
@@ -45,7 +44,7 @@ fi
 # Clone workstation setup project
   mkdir -p ~/dev
   cd ~/dev
-  git clone git@github.com:$GITHUB_USER/$GITHUB_REPO.git </dev/null
+  git clone git@github.com:$GITHUB_USER/workstation-setup.git </dev/null
   cd workstation-setup
 
 # Install soloist
