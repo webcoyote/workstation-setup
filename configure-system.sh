@@ -141,6 +141,9 @@ node_attributes:
     # Store my other projects in "~/dev"
     - - network-traffic-visualize
       - git@github.com:webcoyote/network.git
+    - - install-firefox-extension
+      - git@github.com:webcoyote/install-firefox-extension.git
+
 
 EOF
 # EDIT END

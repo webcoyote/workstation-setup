@@ -5,6 +5,10 @@ onto a Mac/Linux box.
 
 ## Configuration
 
+  Copy your ~/.ssh/id_rsa.pub key into GitHub
+
+## Installation
+
 Clone this repository and edit the scripts as follows
 
   bootstrap.sh
