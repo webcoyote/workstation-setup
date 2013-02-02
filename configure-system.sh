@@ -91,6 +91,7 @@ EOF
 heredoc LINUX_RECIPES << EOF
 - yum::epel # Enterprise Linux
 - yum::remi # for Firefox
+- pivotal_workstation::meld
 EOF
 # EDIT END
 
