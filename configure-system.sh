@@ -122,11 +122,25 @@ $OS_RECIPES
 - pivotal_workstation::zsh
 - pivotal_workstation::workspace_directory
 - pivotal_workstation::git_projects
-- pivotal_workstation::sublime_text
 - pivotal_workstation::firefox
+- pivotal_workstation::sublime_text
 
 node_attributes:
   workspace_directory: dev
+
+  git:
+    - - user.name
+      - Patrick Wyatt
+    - - user.email
+      - pat@codeofhonor.com
+    - - color.ui
+      - true
+    - - difftool.prompt
+      - false
+    - - alias.lol
+      - log --graph --decorate --oneline
+    - - alias.lola
+      - log --graph --decorate --oneline --all
 
   git_projects:
     # put the dotfiles in the home directory
@@ -137,8 +151,6 @@ node_attributes:
     # Store my other projects in "~/dev"
     - - network-traffic-visualize
       - git@github.com:webcoyote/network.git
-    - - install-firefox-extension
-      - git@github.com:webcoyote/install-firefox-extension.git
 
 
 EOF
