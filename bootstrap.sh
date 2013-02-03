@@ -25,8 +25,8 @@ rvm reload
 # Install Ruby 1.9.3 with packages
   rvm pkg install --verify-downloads 1 readline </dev/null
   rvm pkg install --verify-downloads 1 autoconf </dev/null
-  rvm pkg install --verify-downloads 1 openssl  </dev/null
   rvm pkg install --verify-downloads 1 zlib     </dev/null
+  rvm pkg install --verify-downloads 1 openssl  </dev/null
   rvm install 1.9.3-p374 </dev/null
 
 # Make .ssh directory
