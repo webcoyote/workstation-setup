@@ -20,7 +20,7 @@ if ! (rvm --version 2>/dev/null >/dev/null) ; then
     export PATH=/home/$USER/.rvm/bin:$PATH
   fi
 fi
-rvm reload
+. "$HOME/.rvm/scripts/rvm"
 
 # Install Ruby 1.9.3 with packages
   rvm pkg install --verify-downloads 1 readline </dev/null
@@ -51,8 +51,8 @@ rvm reload
   git clone git@github.com:$GITHUB_USER/workstation-setup.git </dev/null
   cd workstation-setup
 
+
 # Install soloist
-  rvm gemset use --create ruby-1.9.3-p374@soloist </dev/null
   gem install soloist </dev/null
 
 # And run system configuration
