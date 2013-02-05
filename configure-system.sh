@@ -146,8 +146,8 @@ node_attributes:
 
   git_projects:
     # put the dotfiles in the home directory
-    - - .custom_dotfiles
-      - git@github.com:webcoyote/my_dotfiles.git
+    - - .dotfiles
+      - git@github.com:webcoyote/dotfiles.git
       - .
 
     # Store my other projects in "~/dev"
