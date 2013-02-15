@@ -66,7 +66,7 @@ function update_github_archive () {
   if [[ -d $2 ]]; then
     cd $2 && git pull && cd ..
   else
-    git clone git@github.com:$1/$2.git
+    git clone git://github.com/$1/$2.git
   fi
   cd ..
 }
@@ -147,12 +147,12 @@ node_attributes:
   git_projects:
     # put the dotfiles in the home directory
     - - .dotfiles
-      - git@github.com:webcoyote/dotfiles.git
+      - git://github.com/webcoyote/dotfiles.git
       - .
 
     # Store my other projects in "~/dev"
     - - network-traffic-visualize
-      - git@github.com:webcoyote/network.git
+      - git://github.com/webcoyote/network.git
 
 
 EOF
