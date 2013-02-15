@@ -48,7 +48,7 @@ fi
 # Clone workstation setup project
   mkdir -p ~/dev
   cd ~/dev
-  git clone git@github.com:$GITHUB_USER/workstation-setup.git </dev/null
+  git clone git://github.com/$GITHUB_USER/workstation-setup.git </dev/null
   cd workstation-setup
 
 
