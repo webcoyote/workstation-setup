@@ -55,7 +55,7 @@ EOF
 
 
 # Choose specific recipes
-  if [ ! `uname -a | grep "Ubunutu"` ] ; then
+if (uname -a | grep "Ubuntu") &>/dev/null ; then
     DISTRO_RECIPES="$UBUNTU_RECIPES"
   else
     DISTRO_RECIPES="$CENTOS_RECIPES"
