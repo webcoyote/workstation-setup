@@ -87,7 +87,8 @@ $DISTRO_RECIPES
 $OS_RECIPES
 - pivotal_workstation::wget
 - pivotal_workstation::git
-- pivotal_workstation::rvm
+- pivotal_workstation::node_js
+- pivotal_workstation::golang
 - pivotal_workstation::oh_my_zsh
 - pivotal_workstation::zsh
 - pivotal_workstation::workspace_directory
@@ -126,6 +127,7 @@ node_attributes:
 EOF
 # EDIT END
 
+echo
+echo "soloistrc file prepared"
+echo "run 'soloist' to build your computer"
 
-# Build it
-soloist
