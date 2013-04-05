@@ -75,6 +75,8 @@ fi
 # Install soloist in system ruby
   sudo gem install soloist </dev/null
 
+    # ... a dependency of soloist that isn't listed
+    sudo gem install librarian-chef </dev/null
 
 # And run system configuration
   ./configure-system.sh
