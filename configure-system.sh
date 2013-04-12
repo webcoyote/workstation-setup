@@ -87,6 +87,7 @@ $DISTRO_RECIPES
 $OS_RECIPES
 - pivotal_workstation::wget
 - pivotal_workstation::git
+- pivotal_workstation::rbenv
 - pivotal_workstation::node_js
 - pivotal_workstation::golang
 - pivotal_workstation::oh_my_zsh
