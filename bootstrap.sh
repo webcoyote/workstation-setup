@@ -22,15 +22,18 @@ if ! which ruby &>/dev/null ; then
   fi
 fi
 
+# Get user's group
+GROUP=$(id -G -n | cut -d ' ' -f 1)
+
 # Configure ssh to github
   # Make .ssh directory
   mkdir -p ~/.ssh
-  chown $USER:$USER ~/.ssh
+  chown $USER:$GROUP ~/.ssh
   chmod 0700 ~/.ssh
 
   # Make known hosts file
   touch ~/.ssh/known_hosts
-  chown $USER:$USER ~/.ssh/known_hosts
+  chown $USER:$GROUP ~/.ssh/known_hosts
   chmod 0644 ~/.ssh/known_hosts
 
   # Add github key
